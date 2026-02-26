@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main .content .overview{
+    gap: 1.6rem;
+    
+    display: flex;
+    
+   
+}
+.main .content .overview>div{
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     padding: 1rem; 
+    margin-top: 1rem;
+    transition: all .3sec ease;
+
+}
+
+/* .main .content .overview>div {
+    flex: 1;
+    min-width: 200px;
+    max-width: 450px;
+     height: 150px; 
+      justify-content: center;
+     gap: 15px;
+    
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+     display: flex;
+    flex-direction: row;
+    
+}  */
+ .main .content .overview>div:hover{
+    box-shadow: none;
+
+}
+
+.main .content .overview>div span{
+    background: coral;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+.main .content .overview>div.events span{
+    background-color: rgb(226, 155, 129);
+}
+.main .content .overview>div.notices span{
+    background-color: rgb(146, 112, 99);
+}
+.main .content .overview>div.polls span{
+    background-color: rgb(233, 85, 31);
+}
+.main .content .overview>div .items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*
+.main .content .overview .card .items {
+    margin-left: 10px;
+}
+    */
+.main .content .overview >div.items h2{
+    font-size: 1.5rem;
+    
+}
+.main .content .overview >div .items h3{
+    font-size: 1rem;
+    color: rgb(69, 42, 42);
+} 
+.main .content .overview .progress{
+   position: relative;
+   height: 68px;
+   width: 68px;
+   border-radius: 50%;
+    
+   
+}
+.main .content .overview svg{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 0; 
+   
+}
+.main .content .overview svg circle{
+    fill: none;
+    stroke: aqua;
+    transform: rotate(270,80,80);
+    stroke: 5px;
+}
+.main .content .overview .users svg circle{
+    stroke-dashoffset: 10;
+    stroke-dasharray: 150;
+}
+.main .content .overview .events svg circle{
+    stroke-dashoffset: 10;
+    stroke-dasharray: 150;
+}
+.main .content .overview .notices svg circle{
+    stroke-dashoffset: 10;
+    stroke-dasharray: 150;
+}
+.main .content .overview .polls svg circle{
+    stroke-dashoffset: 10;
+    stroke-dasharray: 150;
+}
+.main .content .overview .number{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .main .content .overview{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .main .topsection{
+        padding-left: 30%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main .topsection{
+        padding-left: 60%;
+    }
+    .main .content .overview{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 40px;
+        gap: 1.6rem;
+        overflow-x: hidden;
+    }
+}

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 1200px) {
+    .main .content .overview{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .main .topsection{
+       
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main .topsection{
+        margin-top: 0;
+        padding-left: 60%;
+    }
+    .main .content .overview{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 40px;
+        gap: 1.6rem;
+        overflow-x: hidden;
+    }
+}
